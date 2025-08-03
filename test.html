@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>why are you here? do you want something?</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+      * {
+        font-family: "VT323", monospace;
+      }
+      @keyframes obelisk {
+        0% {
+          background-image: url("https://u.cubeupload.com/fick/purplething1.png");
+        }
+        5.555% {
+          background-image: url("https://u.cubeupload.com/fick/purplething2.png");
+        }
+        11.11% {
+          background-image: url("https://u.cubeupload.com/fick/purplething3.png");
+        }
+        16.665% {
+          background-image: url("https://u.cubeupload.com/fick/purplething4.png");
+        }
+        22.22% {
+          background-image: url("https://u.cubeupload.com/fick/purplething5.png");
+        }
+        27.775% {
+          background-image: url("https://u.cubeupload.com/fick/purplething6.png");
+        }
+        33.33% {
+          background-image: url("https://u.cubeupload.com/fick/purplething7.png");
+        }
+        38.885% {
+          background-image: url("https://u.cubeupload.com/fick/purplething8.png");
+        }
+        44.44% {
+          background-image: url("https://u.cubeupload.com/fick/purplething9.png");
+        }
+        49.995% {
+          background-image: url("https://u.cubeupload.com/fick/purplething10.png");
+        }
+        55.55% {
+          background-image: url("https://u.cubeupload.com/fick/purplething11.png");
+        }
+        61.105% {
+          background-image: url("https://u.cubeupload.com/fick/purplething12.png");
+        }
+        66.66% {
+          background-image: url("https://u.cubeupload.com/fick/purplething13.png");
+        }
+        72.215% {
+          background-image: url("https://u.cubeupload.com/fick/purplething14.png");
+        }
+        77.77% {
+          background-image: url("https://u.cubeupload.com/fick/purplething15.png");
+        }
+        83.325% {
+          background-image: url("https://u.cubeupload.com/fick/purplething16.png");
+        }
+        88.88% {
+          background-image: url("https://u.cubeupload.com/fick/purplething17.png");
+        }
+        94.435% {
+          background-image: url("https://u.cubeupload.com/fick/purplething18.png");
+        }
+        100% {
+          background-image: url("https://u.cubeupload.com/fick/purplething1.png");
+        }
+      }
+      @keyframes grink {
+        0% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink1.png");
+        }
+        5.555% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink2.png");
+        }
+        11.11% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink3.png");
+        }
+        16.665% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink4.png");
+        }
+        22.22% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink5.png");
+        }
+        27.775% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink6.png");
+        }
+        33.33% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink7.png");
+        }
+        38.885% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink8.png");
+        }
+        44.44% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink9.png");
+        }
+        49.995% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink10.png");
+        }
+        55.55% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink11.png");
+        }
+        61.105% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink12.png");
+        }
+        66.66% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink13.png");
+        }
+        72.215% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink14.png");
+        }
+        77.77% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink15.png");
+        }
+        83.325% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink16.png");
+        }
+        88.88% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink17.png");
+        }
+        94.435% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink18.png");
+        }
+        100% {
+          background-image: url("https://u.cubeupload.com/fick/thegrink1.png");
+        }
+      }
+      @keyframes scanlines {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: 0 10px;
+        }
+      }
+      @keyframes flicker {
+        0% {
+          opacity: 0%;
+        }
+        100% {
+          opacity: 58%;
+        }
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        font-family: "VT323", monospace;
+        align-items: center;
+        background-color: #078282;
+      }
+      .obelisk_One {
+        position: absolute;
+        margin-top: 300px;
+        margin-right: 800px;
+        height: 195px;
+        width: 90px;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        background-repeat: no-repeat;
+        animation: obelisk 2s infinite;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+        background-size: 90px 195px;
+      }
+      .obelisk_Two {
+        position: absolute;
+        margin-top: 400px;
+        margin-right: 1250px;
+        height: 390px;
+        width: 180px;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        background-repeat: no-repeat;
+        animation: obelisk 8s infinite reverse;
+        background-size: 180px 390px;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+      }
+      .obelisk_Three {
+        position: absolute;
+        margin-top: 170px;
+        margin-left: 1250px;
+        height: 260px;
+        width: 120px;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        background-repeat: no-repeat;
+        animation: obelisk 5s infinite reverse;
+        background-size: 120px 260px;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+      }
+      .obelisk_Four {
+        position: absolute;
+        margin-top: 360px;
+        margin-left: 870px;
+        height: 347px;
+        width: 160px;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        background-repeat: no-repeat;
+        animation: grink 9s infinite;
+        background-size: 160px 347px;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+      }
+      .obelisk_Five {
+        position: absolute;
+        margin-top: 80px;
+        margin-right: 1100px;
+        height: 260px;
+        width: 120px;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        background-repeat: no-repeat;
+        animation: grink 3s infinite reverse;
+        background-size: 120px 260px;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+      }
+      .main_Window {
+        width: 34%;
+        flex-direction: column;
+        display: flex;
+        background-color: #bfbfbf;
+        border-style: solid;
+        border-width: 3px;
+        border-left-color: #e3e3e3;
+        border-top-color: #e3e3e3;
+        border-bottom-color: #7f7f7f;
+        border-right-color: #7f7f7f;
+      }
+      .header_Bar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #00007f;
+        margin: 1px;
+      }
+      .title_Section {
+        -webkit-text-fill-color: whitesmoke;
+        margin-left: 6px;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+      .window_Clickables {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 3px;
+        margin-right: 4px;
+      }
+      .window_Clickables button {
+        height: 15px;
+        width: 19px;
+        border-radius: 0;
+        background-color: #bfbfbf;
+        border-left-color: #e3e3e3;
+        border-top-color: #e3e3e3;
+        border-bottom-color: #636368;
+        border-right-color: #636368;
+      }
+      .window_Clickables button:active {
+        border-top-color: #636368;
+        border-left-color: #636368;
+        border-bottom-color: #e3e3e3;
+        border-right-color: #e3e3e3;
+        translate: 2% 2%;
+      }
+      .minimize_Button {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+      }
+      .minimize_Button span {
+        height: 3px;
+        width: 9px;
+        background-color: #3e3e3e;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+      }
+      .fullscreen_Button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 4px;
+      }
+      .fullscreen_Button span {
+        width: 7px;
+        height: 5px;
+        border-top-width: 3px;
+        border-right-width: 2px;
+        border-bottom-width: 2px;
+        border-left-width: 2px;
+        border-style: solid;
+        border-color: #3e3e3e;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+      }
+      .exit_Button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .navigation_Clickables {
+        display: flex;
+        align-content: center;
+      }
+      .navigation_Clickables button {
+        border-radius: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        border-color: rgba(0, 0, 0, 0);
+        font-size: 14px;
+      }
+      .navigation_Clickables button:hover {
+        border-color: #8f8f8f;
+      }
+      .navigation_Clickables button:active {
+        translate: 2% 2%;
+      }
+      .main_Content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 3px;
+        margin-top: 2px;
+        margin-right: 6px;
+        margin-left: 6px;
+        margin-bottom: 3px;
+        border-style: solid;
+        border-width: 3px;
+        border-top-color: #5b5a5a;
+        border-left-color: #5b5a5a;
+        border-bottom-color: #e1e1e1;
+        border-right-color: #e1e1e1;
+        justify-content: space-evenly;
+      }
+      .main_Content p {
+        font-size: 17px;
+      }
+      .about_Me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .greeter {
+        font-size: xxx-large;
+      }
+      p > span {
+        -webkit-text-fill-color: #c2fbca;
+        text-shadow: -1px -1px black, 1px 1px black, -1px 1px black,
+          1px -1px black;
+      }
+      .contact_Me {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #fe1600;
+        -webkit-text-fill-color: white;
+        position: relative;
+      }
+      .contact_Me::before {
+        content: " ";
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(
+            rgba(17, 18, 16, 0.6) 50%,
+            rgba(0, 0, 0, 0.15) 40%
+          ),
+          linear-gradient(
+            90deg,
+            rgba(255, 0, 0, 0.06),
+            rgba(0, 255, 0, 0.01),
+            rgba(0, 0, 255, 0.06)
+          );
+        opacity: 20%;
+        z-index: 999;
+        background-size: 50% 5.5px, 6px 100%, 6px 100%;
+        pointer-events: none;
+        animation: scanlines infinite 3.5s linear;
+      }
+      .contact_Me::after {
+        content: " ";
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        animation: flicker infinite 0.02s;
+        background-color: rgba(17, 18, 16, 0.2);
+        z-index: 999;
+        pointer-events: none;
+      }
+      .contact_Me span {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .contact_Me p {
+        font-style: italic;
+        font-size: smaller;
+        opacity: 80%;
+      }
+      .zero {
+        font-size: xx-large;
+      }
+      .circle {
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        height: 10px;
+        width: 10px;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: white;
+        margin-bottom: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="obelisk_One">hey nerd</div>
+    <div class="obelisk_Two">grink</div>
+    <div class="obelisk_Three">dr pepper tastes bad</div>
+    <div class="obelisk_Four">
+      cool ranch doritos are called "cool american" in europe
+    </div>
+    <div class="obelisk_Five">do you want something?</div>
+    <div class="main_Window">
+      <div class="header_Bar">
+        <span class="title_Section">
+          <img
+            width="14"
+            height="14"
+            src="https://img.icons8.com/color/48/opened-folder.png"
+            alt="opened-folder"
+          /><span>IN FLESH?</span>
+        </span>
+        <span class="window_Clickables">
+          <button class="minimize_Button">
+            <span>a</span>
+          </button>
+          <button class="fullscreen_Button">
+            <span>a</span>
+          </button>
+          <button class="exit_Button">
+            <img
+              width="17"
+              height="17"
+              src="https://img.icons8.com/ios-filled/50/multiply.png"
+              alt="multiply"
+            />
+          </button>
+        </span>
+      </div>
+      <div class="navigation_Clickables">
+        <button class="about_Clickable">̲About?</button>
+        <button class="contact_Clickable">̲Contact?</button>
+        <button class="stuff_Clickable">̲Stuff?</button>
+      </div>
+      <div class="about_Me main_Content">
+        <span class="greeter">Hi</span>
+        <p>i am flesh</p>
+        <p>i like to do things on the internet sometimes</p>
+        <p>my favorite food is black sesame ice cream</p>
+        <p>my favorite pokemon is mimikyu</p>
+        <p>i main testament and anji in guilty gear strive</p>
+        <p>my favorite color is <span>#C2FBCA</span></p>
+        <p>i am neurotypical</p>
+        <p>i main insect glaive in monster hunter</p>
+        <p>i like mushrooms</p>
+        <p>i created this site for my computer science class</p>
+        <p>two of the above statements are false</p>
+      </div>
+      <div class="contact_Me main_Content">
+        <span class="circle">hi</span>
+        <span class="zero">{零}</span>
+        <span>THIS SPACE</span>
+        <span>INTENTIONALLY</span>
+        <span>LEFT BLANK.</span>
+        <p>ooooooo im so mysterious and cool</p>
+      </div>
+      <div class="object_Count">19 object(s)</div>
+    </div>
+    <iframe
+      style="border-radius: 12px"
+      src="https://open.spotify.com/embed/playlist/79xrbIghwq19vX4UoOBUFv?utm_source=generator"
+      width="100%"
+      height="152"
+      frameborder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+    ></iframe>
+    <script src="abc.js" defer></script>
+  </body>
+</html>
