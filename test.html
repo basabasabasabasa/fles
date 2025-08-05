@@ -175,6 +175,7 @@
         background-size: 180px 390px;
         image-rendering: -webkit-optimize-contrast;
         image-rendering: crisp-edges;
+        z-index: 15;
       }
       .obelisk_Three {
         position: absolute;
@@ -201,6 +202,7 @@
         background-size: 160px 347px;
         image-rendering: -webkit-optimize-contrast;
         image-rendering: crisp-edges;
+        z-index: 15;
       }
       .obelisk_Five {
         position: absolute;
@@ -215,8 +217,9 @@
         image-rendering: -webkit-optimize-contrast;
         image-rendering: crisp-edges;
       }
-      .main_Window {
-        width: 34%;
+      #main_Window {
+        position: absolute;
+        width: 25%;
         flex-direction: column;
         display: flex;
         background-color: #bfbfbf;
@@ -226,12 +229,54 @@
         border-top-color: #e3e3e3;
         border-bottom-color: #7f7f7f;
         border-right-color: #7f7f7f;
+        z-index: 10;
+        -webkit-user-select: none;
+        user-select: none;
       }
-      .header_Bar {
+      #header_Bar {
         display: flex;
         justify-content: space-between;
         background-color: #00007f;
         margin: 1px;
+      }
+      #window_Border {
+        display: flex;
+        justify-content: space-between;
+        background-color: #00007f;
+        margin: 1px;
+      }
+      .grink {
+        margin-right: 1060px;
+        margin-top: 140px;
+      }
+      #form {
+        position: absolute;
+        width: 19%;
+        flex-direction: column;
+        display: flex;
+        background-color: #bfbfbf;
+        border-style: solid;
+        border-width: 3px;
+        border-left-color: #e3e3e3;
+        border-top-color: #e3e3e3;
+        border-bottom-color: #7f7f7f;
+        border-right-color: #7f7f7f;
+        z-index: 11;
+      }
+      .form_Content {
+        background-image: url('https://u.cubeupload.com/fick/literallymadethisifa.jpeg');
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        margin: 4px;
+        background-color: white;
+        height: 230px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-style: solid;
+        border-width: 3px;
+        border-top-color: #5b5a5a;
+        border-left-color: #5b5a5a;
+        border-bottom-color: #e1e1e1;
+        border-right-color: #e1e1e1;
       }
       .title_Section {
         -webkit-text-fill-color: whitesmoke;
@@ -257,7 +302,7 @@
         border-bottom-color: #636368;
         border-right-color: #636368;
       }
-      .window_Clickables button:active {
+      .window_Clickables button:hover {
         border-top-color: #636368;
         border-left-color: #636368;
         border-bottom-color: #e3e3e3;
@@ -270,6 +315,17 @@
         flex-direction: column-reverse;
       }
       .minimize_Button span {
+        height: 3px;
+        width: 9px;
+        background-color: #3e3e3e;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+      }
+      .minimize_Button_Form {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+      }
+      .minimize_Button_Form span {
         height: 3px;
         width: 9px;
         background-color: #3e3e3e;
@@ -292,7 +348,29 @@
         border-color: #3e3e3e;
         -webkit-text-fill-color: rgba(0, 0, 0, 0);
       }
+      .fullscreen_Button_Form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 4px;
+      }
+      .fullscreen_Button_Form span {
+        width: 7px;
+        height: 5px;
+        border-top-width: 3px;
+        border-right-width: 2px;
+        border-bottom-width: 2px;
+        border-left-width: 2px;
+        border-style: solid;
+        border-color: #3e3e3e;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+      }
       .exit_Button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .exit_Button_Form {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -430,8 +508,39 @@
       cool ranch doritos are called "cool american" in europe
     </div>
     <div class="obelisk_Five">do you want something?</div>
-    <div class="main_Window">
-      <div class="header_Bar">
+    <div class="grink">
+      <div id="form">
+        <div id="window_Border">
+          <span class="title_Section">
+            <img
+              width="14"
+              height="14"
+              src="https://img.icons8.com/color/48/opened-folder.png"
+              alt="opened-folder"
+            /><span>&#60o&#62</span>
+          </span>
+          <span class="window_Clickables">
+            <button class="minimize_Button_Form">
+              <span>a</span>
+            </button>
+            <button class="fullscreen_Button_Form">
+              <span>a</span>
+            </button>
+            <button class="exit_Button_Form">
+              <img
+                width="17"
+                height="17"
+                src="https://img.icons8.com/ios-filled/50/multiply.png"
+                alt="multiply"
+              />
+            </button>
+          </span>
+        </div>
+        <div class="form_Content">a</div>
+      </div>
+    </div>
+    <div id="main_Window">
+      <div id="header_Bar">
         <span class="title_Section">
           <img
             width="14"
